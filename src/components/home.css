@@ -69,6 +69,7 @@
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     padding: 40px 20px;
@@ -76,12 +77,12 @@
 }
 
 .back-1 img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
 }
 
 .back-1 div {
-    max-width: 600px;
+    max-width: 700px;
     text-align: center;
 }
 
@@ -131,7 +132,8 @@
 
     .back-1 {
         flex-direction: column;
-        text-align: center;
+        text-align: start;
+        
     }
 
     .back-1 img {

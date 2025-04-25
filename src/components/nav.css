@@ -1,5 +1,6 @@
 .nav-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px; /* Optional: Add background color if needed */
@@ -46,43 +47,25 @@
   /* ------------ RESPONSIVE STYLES ------------ */
   @media (max-width: 768px) {
     .nav-container {
-      flex-direction: column;
-      align-items: flex-start;
-      display: flex;
-    }
-  
-    .logo img {
-      height: 70px;
-    }
-  
-    .nav-links {
-      flex-direction: row;
-      align-items: flex-start;
-      width: 100%;
-      margin-top: 20px;
-      gap: 15px;
-      
-    }
-  
-    .hovering {
-      font-size: 18px;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px; /* Optional: Add background color if needed */
+      }
+      .hovering {
+        position: relative;
+        font-size: 15px;
+        font-family: "Gill Sans", sans-serif;
+      }
+      .logo img {
+        height: 100px
+      }
   }
   
   @media (max-width: 480px) {
-    .nav-container {
-      padding: 10px 20px;
-      display: flex;
-      flex-direction: row;
-
-    }
-    
-    .logo img {
-      height: 50px;
-    }
   
-    .hovering {
-      font-size: 16px;
-    }
+  
+
   }
   
