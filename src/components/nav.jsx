@@ -1,18 +1,20 @@
-import React from 'react'
-import './nav.css'
+import React from 'react';
+import './nav.css';
 
-const nav = () => {
+const Nav = () => {
   return (
-    <div className='position'>
-        <img  src='/images/logo1.png' height={150}/>
-        <ul className='position-1'>
-            <li className='hovering'>Home</li>
-            <li style={{marginLeft:"7%"}} className='hovering'>Rooms</li>
-            <li style={{marginLeft:"7%"}} className='hovering'>Location</li>
-            <li style={{marginLeft:"7%"}} className='hovering'>Contact</li>
-        </ul>
-    </div>
-  )
-}
+    <nav className="nav-container">
+      <div className="logo">
+        <img src="/images/logo1.png" alt="Logo" />
+      </div>
+      <ul className="nav-links">
+        <li className="hovering">Home</li>
+        <li className="hovering">Rooms</li>
+        <li className="hovering">Location</li>
+        <li className="hovering">Contact</li>
+      </ul>
+    </nav>
+  );
+};
 
-export default nav
+export default Nav;

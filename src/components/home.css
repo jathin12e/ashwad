@@ -1,7 +1,6 @@
 .back {
     background-image: url('/images/wmremove-transformed.png');
     background-size: cover;
-    
     background-position: center;
     padding: 2rem;
     background-attachment: fixed;
@@ -15,34 +14,29 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 4%;
+    flex-wrap: wrap; /* add wrap for responsiveness */
 }
 
 .home-positioon-1 {
     text-align: center;
     margin-bottom: 2rem;
+    max-width: 600px;
 }
 
 .carousel-container {
     position: relative;
-    width:700px;
+    width: 700px;
     height: 400px;
     overflow: hidden;
-   
-    
+    max-width: 100%;
 }
 
 .carousel-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    background-color: none;
-     /* Makes it look neat if image doesn't fill entire space */
+    background-color: transparent;
 }
-
-
-
-
-
 
 .carousel-dots {
     text-align: center;
@@ -68,28 +62,104 @@
     background-color: #ffcc00;
 }
 
-
-
-/*about */
-
-.back-1{
+/* About Section */
+.back-1 {
     background-image: url('/images/wmremove-transformed (2).png');
-   font-family: "Gill Sans", sans-serif;
+    font-family: "Gill Sans", sans-serif;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-evenly;
-padding: 20px;
     align-items: center;
+    padding: 40px 20px;
+    flex-wrap: wrap; /* add wrap for responsiveness */
 }
 
-.btn{
+.back-1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.back-1 div {
+    max-width: 600px;
+    text-align: center;
+}
+
+.btn {
     border-style: solid;
     border-radius: 20px;
     background-color: #eb9e47;
-    color: black;
     border-width: 0px;
-    padding: 15px;
+    padding: 15px 25px;
     font-size: 15px;
     color: white;
     cursor: pointer;
+    margin-top: 20px;
+}
+
+/* ------------ RESPONSIVE DESIGN ------------ */
+@media (max-width: 1024px) {
+    .home-position {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel-container {
+        width: 90%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-position {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .home-positioon-1 h1 {
+        font-size: 35px;
+    }
+
+    .home-positioon-1 p {
+        font-size: 16px;
+    }
+
+    .carousel-container {
+        width: 90%;
+        height: 250px;
+    }
+
+    .back-1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .back-1 img {
+        height: auto;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .back-1 div {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-positioon-1 h1 {
+        font-size: 28px;
+    }
+
+    .home-positioon-1 p {
+        font-size: 14px;
+    }
+
+    .carousel-container {
+        height: 200px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
 }

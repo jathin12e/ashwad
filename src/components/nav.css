@@ -1,38 +1,84 @@
-.position{
+.nav-container {
     display: flex;
-    justify-content: space-evenly;
-}
-.position-1{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    font-size: 20px;
-    color: white;
+    justify-content: space-between;
     align-items: center;
-    cursor: pointer;
-}
-
-
-.hovering {
-    display: inline-block;
-    position: relative;
-    font-size: 23px;
-    font-family: "Gill Sans", sans-serif;
-    
+    padding: 10px 30px;
+    background-color: #000; /* Optional: Add background color if needed */
   }
   
-.hovering::after {
-content: '';
-position: absolute;
-width: 100%;
-transform: scaleX(0);
-height: 2px;
-bottom: 0;
-left: 0;
-background-color:yellow;
-transition: transform 0.25s ease-out;
-}
-
-.hovering:hover::after {
-transform: scaleX(1);
-}
+  .logo img {
+    height: 80px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    color: white;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+  }
+  
+  .hovering {
+    position: relative;
+    font-size: 20px;
+    font-family: "Gill Sans", sans-serif;
+  }
+  
+  .hovering::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: yellow;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hovering:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  /* ------------ RESPONSIVE STYLES ------------ */
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo img {
+      height: 60px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 20px;
+      gap: 15px;
+    }
+  
+    .hovering {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-container {
+      padding: 10px 20px;
+    }
+  
+    .logo img {
+      height: 50px;
+    }
+  
+    .hovering {
+      font-size: 16px;
+    }
+  }
+  
