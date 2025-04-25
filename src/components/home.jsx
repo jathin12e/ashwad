@@ -42,8 +42,8 @@ const Home = () => {
             
             <p style={{ color: 'white' , fontWeight:"bold",lineHeight:"1.7"}}>
               Find your community and convenience here! We offer comfortable <br />
-              sharing rooms (1,2, 3, 4 beds) and serve delicious South Indian food,<br />
-              <span style={{marginRight:"37%"}}>making your stay easy and enjoyable.</span>
+              sharing rooms (1,2, 3, 4 beds) and serve delicious South Indian food,
+              making your stay easy and enjoyable.
             </p>
           </div>
           <div className='carousel-container'>
