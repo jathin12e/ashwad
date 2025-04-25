@@ -38,7 +38,7 @@ const Home = () => {
         <Nav />
         <div className='home-position'>
           <div className='home-positioon-1'>
-            <h1 style={{fontSize:"60px", fontFamily:"Roboto"}}> Ashwad Andhra PG<span style={{fontSize:"20px" , color:"red"}}><br/>~Your Comfort Our Responsibility</span></h1>
+            <h1 style={{fontSize:"60px", fontFamily:"Roboto"}}> Ashwad Andhra PG<span style={{fontSize:"20px" , color:"red" , marginLeft:"90px"}}><br/>~Your Comfort Our Responsibility</span></h1>
             
             <p style={{ color: 'white' , fontWeight:"bold",lineHeight:"1.7"}}>
               Find your community and convenience here! We offer comfortable <br />
