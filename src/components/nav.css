@@ -1,0 +1,38 @@
+.position{
+    display: flex;
+    justify-content: space-evenly;
+}
+.position-1{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.hovering {
+    display: inline-block;
+    position: relative;
+    font-size: 23px;
+    font-family: "Gill Sans", sans-serif;
+    
+  }
+  
+.hovering::after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color:yellow;
+transition: transform 0.25s ease-out;
+}
+
+.hovering:hover::after {
+transform: scaleX(1);
+}
