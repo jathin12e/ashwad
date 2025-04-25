@@ -16,3 +16,75 @@
 *{
     font-family: sans-serif
 }
+
+/* ---------------- RESPONSIVE FOOD SECTION ---------------- */
+
+@media (max-width: 1024px) {
+    .food-position {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .food-position img {
+      width: 100%;
+      height: auto;
+      max-width: 500px;
+    }
+  
+    .food-position-1 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .food-position {
+      padding: 20px;
+    }
+  
+    .food-position-1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .food-position h1 {
+      font-size: 2rem;
+      margin-top: 20px;
+    }
+  
+    .food-position p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+  
+    .food-position ul {
+      padding: 0;
+      list-style-position: inside;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .food-position-1 div {
+      width: 100%;
+    }
+  
+    .food-position h3,
+    .head {
+      font-size: 1.2rem;
+    }
+  
+    .food-position p {
+      font-size: 0.95rem;
+    }
+  
+    .food-position ul {
+      font-size: 0.95rem;
+    }
+  }
+  

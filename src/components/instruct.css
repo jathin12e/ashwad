@@ -78,4 +78,69 @@
     margin-right: 10px;
     font-size: 1.3rem;
   }
+  /* ---------------- RESPONSIVE INSTRUCT ---------------- */
+
+@media (max-width: 1024px) {
+  .blue-overlay-1 {
+    width: 60%;
+    margin-right: 30%;
+    padding: 40px 30px;
+  }
+
+  .blue-overlay-1 h2 {
+    font-size: 2rem;
+  }
+
+  .ul-position {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .amenities-section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .background-image {
+    height: 300px;
+    object-fit: cover;
+    margin-top: 70px;
+  }
+
+  .blue-overlay-1 {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 30px 20px;
+  }
+
+  .ul-position {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .blue-overlay-1 h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .blue-overlay-1 {
+    padding: 20px 15px;
+  }
+
+  .blue-overlay-1 h2 {
+    font-size: 1.6rem;
+  }
+
+  .ul-position {
+    font-size: 0.9rem;
+    padding-left: 15px;
+  }
+}
+
   

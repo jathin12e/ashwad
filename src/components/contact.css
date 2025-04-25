@@ -5,3 +5,48 @@
     background-image: url('/images/wmremove-transformed (3).png');
     background-size: cover;
 }
+
+/* ---------------- RESPONSIVE FOOTER ---------------- */
+
+@media (max-width: 1024px) {
+    .footer-position {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 20px;
+      gap: 20px;
+    }
+  
+    .footer-position img {
+      width: 150px;
+      height: auto;
+    }
+  
+    .footer-position h1 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  
+    .footer-position p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-position {
+      gap: 30px;
+    }
+  
+    .footer-position h1 {
+      font-size: 1.3rem;
+    }
+  
+    .footer-position p {
+      font-size: 0.95rem;
+    }
+  
+    .footer-position img {
+      max-width: 120px;
+    }
+  }
+  

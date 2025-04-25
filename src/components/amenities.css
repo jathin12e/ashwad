@@ -1,81 +1,148 @@
 .amenities-section {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-  }
-  
-  .background-image {
-    width: 100%;
-    height: 70%; /* <-- Important! make image full screen height */
-    object-fit: cover;
-    margin-top: 90px;
-  }
-  
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-image {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  margin-top: 90px;
+}
+
+/* Overlay Info Box */
+.blue-overlay {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 35%;
+  height: 80%;
+  background-color: #3a9ecb;
+  color: white;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.pattern-overlay {
+  background-image: url('/images/pattern.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.blue-overlay h2,
+.blue-overlay p,
+.amenities-list {
+  position: relative;
+  z-index: 2;
+}
+
+.blue-overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.blue-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.amenities-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+}
+
+.amenities-list div {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.amenities-list div svg {
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+/* -------- RESPONSIVE -------- */
+
+@media (max-width: 1024px) {
   .blue-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 35%;
-    height: 100%;
-    background-color: #3a9ecb;
-    color: white;
-    padding: 60px 40px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 2;
-    overflow: hidden;
-    margin-top:2%;
-    margin-right:20%;
+    width: 60%;
+    right: 5%;
   }
-  
-  .pattern-overlay {
-    background-image: url('/images/pattern.png'); /* Add your floral pattern */
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-  
-  .blue-overlay h2,
-  .blue-overlay p,
-  .amenities-list {
-    position: relative;
-    z-index: 2;
-  }
-  
+
   .blue-overlay h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
   }
-  
+
   .blue-overlay p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    line-height: 1.5;
+    font-size: 1rem;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .background-image {
+    height: 50vh;
+  }
+
+  .blue-overlay {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    margin-top: -20px;
+    border-radius: 0;
+  }
+
   .amenities-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 40px;
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
-  
+
+  .blue-overlay h2 {
+    font-size: 1.8rem;
+  }
+
+  .blue-overlay p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blue-overlay {
+    padding: 20px 15px;
+  }
+
+  .blue-overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .blue-overlay p {
+    font-size: 0.95rem;
+  }
+
   .amenities-list div {
-    display: flex;
-    align-items: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
-  
+
   .amenities-list div svg {
-    margin-right: 10px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
-  
+}
