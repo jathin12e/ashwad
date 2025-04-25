@@ -1,11 +1,10 @@
 .back {
     background-image: url('/images/wmremove-transformed.png');
     background-size: cover;
-    min-height: 100vh;
+    
     background-position: center;
     padding: 2rem;
     background-attachment: fixed;
-    backface-visibility:hidden;
 }
 
 .home-position {
@@ -79,7 +78,7 @@
     background-size: cover;
     display: flex;
     justify-content: space-evenly;
-    height: 80vh;
+padding: 20px;
     align-items: center;
 }
 
